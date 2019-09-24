@@ -21,9 +21,8 @@ public class Shuffler {
 
   /**
    * Shuffles {@code data} in place
-   * @param data
+   * @param data random number generator.
    */
-
   public void shuffle(int[] data) {
     for(int dest = data.length - 1; dest > 0; dest--) {
       int source = rng.nextInt(dest + 1);
@@ -36,7 +35,7 @@ public class Shuffler {
 
   /**
    * Shuffles {@code data} in place
-   * @param data
+   * @param data random number generator.
    */
   public void shuffle(byte[] data) {
     for(int dest = data.length - 1; dest > 0; dest--) {
@@ -49,7 +48,7 @@ public class Shuffler {
 
   /**
    * Shuffles {@code data} in place
-   * @param data
+   * @param data random number generator.
    */
   public void shuffle(char[] data) {
     for(int dest = data.length - 1; dest > 0; dest--) {
@@ -62,7 +61,7 @@ public class Shuffler {
   }
   /**
    * Shuffles {@code data} in place
-   * @param data
+   * @param data random number generator.
    */
 
   public void shuffle(short[] data) {
@@ -77,7 +76,7 @@ public class Shuffler {
 
   /**
    * Shuffles {@code data} in place
-   * @param data
+   * @param data random number generator.
    */
   public void shuffle(long[] data) {
     for(int dest = data.length - 1; dest > 0; dest--) {
@@ -90,7 +89,7 @@ public class Shuffler {
 
   /**
    * Shuffles {@code data} in place
-   * @param data
+   * @param data random number generator.
    */
   public void shuffle(float[] data) {
     for(int dest = data.length - 1; dest > 0; dest--) {
@@ -103,7 +102,7 @@ public class Shuffler {
 
   /**
    * Shuffles {@code data} in place
-   * @param data
+   * @param data random number generator.
    */
   public void shuffle(double[] data) {
     for(int dest = data.length - 1; dest > 0; dest--) {
@@ -116,7 +115,7 @@ public class Shuffler {
 
   /**
    * Shuffles {@code data} in place.
-   * @param data
+   * @param data random number generator.
    * @param <T>
    */
   public <T> void shuffle(T[] data) {
